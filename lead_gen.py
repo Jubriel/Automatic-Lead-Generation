@@ -149,14 +149,14 @@ class LeadGenerator:
 
 
     
-    def send_email(self, subject: str, body: str) -> bool:
+    def send_email(self, recipient:str, subject: str, body: str) -> bool:
         if not self.email_config['sender'] or not self.email_config['password']:
             self.logger.error("Email credentials missing")
             return False
             
         msg = MIMEMultipart()
         msg['From'] = self.email_config['sender']
-        msg['To'] = self.email_config['recipient']
+        msg['To'] = recipient
         msg['Subject'] = subject
         msg.attach(MIMEText(body, 'plain'))
         

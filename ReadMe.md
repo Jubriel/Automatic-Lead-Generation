@@ -20,7 +20,7 @@ This project automates the process of lead generation, contact extraction, and p
 1. **Clone the repository**
    ```sh
    git clone https://github.com/Jubriel/Automatic-Lead-Generation.git
-   cd lead-generator
+   cd Automatic-Lead-Generation
    ```
 
 2. **Install dependencies**

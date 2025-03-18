@@ -22,7 +22,7 @@ async def main():
                     lead_result.update(contacts[0])
                     output = lead_gen.generate_email_content(lead_result)
                     if output:
-                        lead_gen.send_email(output['subject'], output['body'])
+                        lead_gen.send_email(lead_result['email'],output['subject'], output['body'])
                         print(f"Email Sent Successfully to {lead_result['Company Name']}")
                     else:
                         continue

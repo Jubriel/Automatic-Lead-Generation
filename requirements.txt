@@ -1,0 +1,6 @@
+aiohttp==3.11.7
+apify_client==1.9.2
+nest_asyncio==1.6.0
+ollama==0.4.7
+pandas==2.2.3
+python-dotenv==1.0.1
